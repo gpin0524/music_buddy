@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Music Buddy</string>
+    <string name="connect">連接\nconnect</string>
+    <string name="disconnect">中斷連接\ndisconnect</string>
+    <string name="stop_monitoring">停止監測\nstop monitoring</string>
+    <string name="start_monitoring">開始監測\nstart monitoring</string>
+    <string name="waiting_for_raw_signal">等待腦波前測\nwaiting for raw signal...</string>
+    <string name="waiting_for_blink_signal">等待\nwaiting for blink signal...</string>
+    <string name="waiting_for_meditation_signal">等待冥想值\nwaiting for meditation signal...</string>
+    <string name="waiting_for_attention_signal">等待專注值\nwaiting for attention signal...</string>
+    <string name="waiting_for_state">等待連接\nwaiting for state...</string>
+    <string name="ok">ok</string>
+    <string name="no">才不要</string>
+    <string name="dismiss">放棄添加</string>
+    <string name="dialog_message">測試完成\nTest has been completed</string>
+    <string name="dialog_title">歌曲已播放完畢\nYour playlist has been finished</string>
+    <string name="stateA">工作 WORK</string>
+    <string name="stateB">放鬆 RELAX</string>
+    <string name="stateC">沮喪 DEPRESS</string>
+    <string name="stateD">睡眠 SLEEP</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_test">test</string>string>
+    <string name="string_instruction_of_use">1. 請確認網路連接正常\n\n
+        2. 確認裝置上有安裝YOUTUBE軟體\n\n
+        3. 開啟手機藍芽及腦波儀並連接\n\n
+        4. 配戴腦波儀時請將中間的兩顆金屬接收器對準眉心上方，旁邊的接收器對準左邊太陽穴，注意接收器與皮膚中間不要有毛髮或阻隔物\n\n
+        5. 在播放頁面按下PLAY按鈕撥放歌曲前，請先按下CONNECT以確保連接並等待約90秒進行前測\n\n
+        6. 進行腦波前測時，請保持穩定、平靜的狀態\n\n
+        7. 若一首歌的測量時間未達90秒，將視為測量未完成，不加入播放清單中\n\n
+        1.Please check the internet is well connected.\n\n
+        2.Make sure you have download YouTube APP on your device.\n\n
+        3.Turn on bluetooth and wait for the connection with EEG.\n\n
+        4.Adjust the forehead Sensor of the headset so that the Sensor Tip makes contact with the skin of your forehead. Sensor Tip must maintain steady skin contact in order to properly measure your brainwaves, it will not work through hair, yet stay firmly in position. The sensor must directly contact the skin at all times. Make up, dead skin, or debris can interfere with the connection.Scratch or wipe the obstruction away if you have trouble obtaining a clean signal.\n\n
+        5.Before pressing the PLAY button on the player interface,please press the CONNECT button first and wait about 90 seconds for the raw brainwave data recording process.\n\n
+        6.When doing the raw brainwave data recording process,please keep calm and make sure yourself in a peaceful state.\n\n
+        7.If the measuring time of one song did not reach 100 seconds,the song will not be considered.</string>
+
+
+    <string-array name="tag_item">
+        <item>流行抒情</item>
+        <item>流行勁歌</item>
+        <item>搖滾</item>
+        <item>電子</item>
+        <item>節奏藍調</item>
+        <item>嘻哈</item>
+        <item>悲傷</item>
+        <item>心痛</item>
+        <item>想念</item>
+        <item>深情</item>
+        <item>治癒</item>
+        <item>宣洩</item>
+        <item>勵志</item>
+        <item>快樂</item>
+        <item>甜蜜</item>
+        <item>興奮</item>
+
+    </string-array>
+</resources>
