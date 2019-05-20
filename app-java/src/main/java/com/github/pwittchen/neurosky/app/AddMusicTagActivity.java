@@ -36,6 +36,7 @@ public class AddMusicTagActivity extends AppCompatActivity {
     private AlertDialog.Builder tagAddingDialog;
     private String[] tagItems;
     private boolean[] checkedItems;
+    private int count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +45,7 @@ public class AddMusicTagActivity extends AppCompatActivity {
         tagItems = getResources().getStringArray(R.array.tag_item);
         checkedItems = new boolean[tagItems.length];
         mSelectedItems = new ArrayList();
+        count = 0;
 
         // 取值
         Intent intent = getIntent();
@@ -111,13 +113,16 @@ public class AddMusicTagActivity extends AppCompatActivity {
             }
         });
 
-        //
+        if (count == dbNullList.size()){
+            addFinAlertdialog.show();
+        }
 
 
     }
 
     private void TagAdding(){
         for (int i = 0; i < dbNullList.size(); i++){
+            mSelectedItems = new ArrayList<>();
             tagAddingDialog = new AlertDialog.Builder(this);
             MusicDetails musicDetails = dbNullList.get(i);
             tagAddingDialog.setTitle("為" + musicDetails.getMusicTitle() + "添加分類標籤");
@@ -148,7 +153,10 @@ public class AddMusicTagActivity extends AppCompatActivity {
                     }
                     musicDetails.setTag(tag);
                     Log.d(TAG, "onClick: tag = " + tag);
-
+                    count += 1;
+                    if (count == dbNullList.size()){
+                        addFinAlertdialog.show();
+                    }
                 }
             });
 
@@ -160,9 +168,8 @@ public class AddMusicTagActivity extends AppCompatActivity {
                 }
             });
             tagAddingDialog.show();
+            Log.d(TAG, "TagAdding: count = " + count);
         }
-
-        addFinAlertdialog.show();
 
     }
 
